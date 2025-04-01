@@ -5,6 +5,9 @@ import FloatingCubes from "./FloatingCubes";
 import AnimatedText from "./Animatedtext"; // Import the component
 import Expertise from "./Expertise";
 import Work from "./Work";
+import Proj from "./Proj" 
+import Accordion from "./Accordion";
+import Info from "./Info";
 
 const Home = () => {
   return (
@@ -13,7 +16,7 @@ const Home = () => {
     
 <div className="home" id="sayo" style={{ position: 'relative', minHeight: "100vh", overflowY: "auto" }}>
 
-        
+      <div></div> 
         <FloatingCubes />
         <div style={{position:'absolute', top:'25%'}}>
           <h1 className="sula">TAMALSEN</h1>
@@ -25,11 +28,28 @@ const Home = () => {
       </div>
 
       <div>
+        
         <Expertise />
+        
+        
+        
+      </div>
+
+      <div>
         <Work/>
       </div>
 
+      <div>
+        <Proj/>
+      </div>
 
+      <div>
+        <Accordion/>
+      </div>
+
+      <div>
+        <Info/>
+      </div>
       
 
       

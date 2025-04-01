@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 
-const roles = ["Front-end Developer"];
+const roles = ["Front-end Developer", "Me"];
 
 const AnimatedText = () => {
   const [index, setIndex] = useState(0);

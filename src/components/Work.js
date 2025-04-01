@@ -1,8 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "../styles/work.css";
-import Projects from "./Projects"; // Import the projects section
-import PhoneMockup from "./hello-world-html-code.png"; // ✅ Import the phone image
 
 const Work = () => {
   return (
@@ -13,31 +11,26 @@ const Work = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        My Work
+      <h1 style={{fontSize:'80px'}}>My <br/> Work</h1>  
       </motion.h2>
 
       <div className="work-container">
-        {/* Left Side: Phone Mockup */}
-        <motion.div 
-          className="phone-mockup"
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <img src={PhoneMockup} alt="Phone Mockup" />
-        </motion.div>
+        <div>
+          <p style={{textAlign:'left'}}>
+            Deployed scalable travel, event and <br/>
+            telemedicine web and hybrid mobile apps <br/>
+            using React SPA and PWA.
+            Collaborated in 140+ projects with 50+ <br/>
+            clients all around the world. I am also <br/>
+            interested in data analytics and <br/>
+            visualization.
+          </p>
+        </div>
 
-        {/* Right Side: Projects */}
-        <motion.div 
-          className="projects-list"
-          initial={{ opacity: 0, x: 50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <Projects />
-        </motion.div>
+        <div>
+         er lamnwnfkr
+        </div>
+        
       </div>
     </section>
   );
